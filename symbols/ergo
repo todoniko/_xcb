@@ -1,0 +1,59 @@
+partial modifier_keys
+xkb_symbols "menu_mod4" {
+  replace key <MENU> { [ VoidSymbol, VoidSymbol ] };
+  modifier_map Mod4 { <MENU> };
+};
+
+default  partial alphanumeric_keys modifier_keys
+xkb_symbols "wide" {
+
+   include "us(basic)"
+   name[Group1]= "English (Wider Keyboard)";
+   key <AE03> {	[ parenleft,    parenright ] };
+   key <AE04> {	[ less,         greater ] };
+   key <AE10> { [ colon,        semicolon ] };
+   key <AE11> {	[ bracketleft,	bracketright ] };
+   key <AE12> {	[ braceleft,    braceright ] };
+
+
+   key <AD01> { [         v,          V ] };
+   key <AD02> { [         p,          P ] };
+   key <AD03> { [         l,          L ] };
+   key <AD04> { [         g,          G ] };
+   key <AD05> { [         f,          F ] };
+   key <AD06> { [         q,          Q ] };
+
+   key <AD08> { [         j,          J ] };
+   key <AD09> { [         u,          U,      Prior,     Prior ] };
+   key <AD10> { [         o,          O,         Up,        Up ] };
+   key <AD11> { [         y,          Y,       Next,      Next ] };
+   key <AD12> { [         k,          K ] };
+
+   key <AC01> { [         r,          R ] };
+   key <AC02> { [         n,          N ] };
+   key <AC03> { [         t,          T ] };
+   key <AC04> { [         s,          S,     Escape,    Escape ] };
+   key <AC05> { [         d,          D,     Delete,     Delet ] };
+   key <AC06> { [asciitilde, numbersign,   question,    exclam ] };
+
+   key <AC07> {	[     equal,	   plus,  ampersand,   percent ] };
+   key <AC08> { [         z,          Z,  BackSpace, BackSpace ] };
+   key <AC09> { [         e,          E,       Left,      Left ] };
+   key <AC10> { [         a,          A,       Down,      Down ] };
+   key <AC11> { [         i,          I,      Right,     Right ] };
+   key <BKSL> { [         h,          H ] };
+
+   key <LSGT> { [         x,          X ] };
+   key <AB01> { [         b,          B ] };
+   key <AB02> { [         m,          M ] };
+   key <AB03> { [         c,          C ] };
+   key <AB04> { [         w,          W ] };
+
+   key <AB07> { [apostrophe, quotedbl   ] };
+   key <AB08> { [     minus, underscore ] };
+   key <AB09> { [     slash, bar, backslash ] };
+   key <AB10> { [    period,      comma ] };
+   key <SPCE> { [     space,      space,        Tab,       Tab ] };
+
+   include "level3(ralt_switch)"
+};

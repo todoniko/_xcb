@@ -13,7 +13,7 @@ xkb_symbols "wide" {
    key <AE03> {	[ 3, numbersign, at] };
    key <AE04> {	[ 4, dollar,     asciitilde] };
    
-   key <AE10> { [ q,      Q,        escape ] };
+   key <AE10> { [ q,      Q,        Escape ] };
    key <AE11> {	[ exclam,	question, backslash ] };
 
    key <AD01> { [ v, V ] };
@@ -32,7 +32,7 @@ xkb_symbols "wide" {
    key <AC02> { [ n, N, equal ] };
    key <AC03> { [ t, T, bracketleft, bracketright ] };
    key <AC04> { [ s, S, braceleft,   braceright ] };
-   key <AC05> { [ d, D, delete ] };
+   key <AC05> { [ d, D, Delete ] };
 
    key <AC08> { [ z, Z, BackSpace ] };
    key <AC09> { [ e, E, Left ] };

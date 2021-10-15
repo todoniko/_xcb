@@ -1,3 +1,5 @@
+# Behold
+![Image of Yaktocat](./layout.png)
 # Why another keyboard layout?
 Computer keyboards are not designed with human hand in mind:
 * pinkies are used for heavy work e.g. holding down keys and extending to the sides

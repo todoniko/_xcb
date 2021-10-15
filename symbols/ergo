@@ -9,51 +9,48 @@ xkb_symbols "wide" {
 
    include "us(basic)"
    name[Group1]= "English (Wider Keyboard)";
-   key <AE03> {	[ parenleft,    parenright ] };
-   key <AE04> {	[ less,         greater ] };
-   key <AE10> { [ colon,        semicolon ] };
-   key <AE11> {	[ bracketleft,	bracketright ] };
-   key <AE12> {	[ braceleft,    braceright ] };
+   key <TLDE> {	[ 0 ]	};
+   key <AE03> {	[ 3, numbersign, at] };
+   key <AE04> {	[ 4, dollar,     asciitilde] };
+   
+   key <AE10> { [ q,      Q,        escape ] };
+   key <AE11> {	[ exclam,	question, backslash ] };
 
+   key <AD01> { [ v, V ] };
+   key <AD02> { [ p, P, parenleft, parenright  ] };
+   key <AD03> { [ l, L, less ] };
+   key <AD04> { [ g, G, greater ] };
+   key <AD05> { [ f, F, semicolon ] };
 
-   key <AD01> { [         v,          V ] };
-   key <AD02> { [         p,          P ] };
-   key <AD03> { [         l,          L ] };
-   key <AD04> { [         g,          G ] };
-   key <AD05> { [         f,          F ] };
-   key <AD06> { [         q,          Q ] };
+   key <AD08> { [ j, J ] };
+   key <AD09> { [ u, U, Prior ] };
+   key <AD10> { [ o, O, Up ] };
+   key <AD11> { [ y, Y, Next ] };
+   key <AD12> { [ k, K ] };
 
-   key <AD08> { [         j,          J ] };
-   key <AD09> { [         u,          U,      Prior,     Prior ] };
-   key <AD10> { [         o,          O,         Up,        Up ] };
-   key <AD11> { [         y,          Y,       Next,      Next ] };
-   key <AD12> { [         k,          K ] };
+   key <AC01> { [ r, R, Home ] };
+   key <AC02> { [ n, N, equal ] };
+   key <AC03> { [ t, T, bracketleft, bracketright ] };
+   key <AC04> { [ s, S, braceleft,   braceright ] };
+   key <AC05> { [ d, D, delete ] };
 
-   key <AC01> { [         r,          R ] };
-   key <AC02> { [         n,          N ] };
-   key <AC03> { [         t,          T ] };
-   key <AC04> { [         s,          S,     Escape,    Escape ] };
-   key <AC05> { [         d,          D,     Delete,     Delet ] };
-   key <AC06> { [asciitilde, numbersign,   question,    exclam ] };
+   key <AC08> { [ z, Z, BackSpace ] };
+   key <AC09> { [ e, E, Left ] };
+   key <AC10> { [ a, A, Down ] };
+   key <AC11> { [ i, I, Right ] };
+   key <BKSL> { [ h, H, End ] };
 
-   key <AC07> {	[     equal,	   plus,  ampersand,   percent ] };
-   key <AC08> { [         z,          Z,  BackSpace, BackSpace ] };
-   key <AC09> { [         e,          E,       Left,      Left ] };
-   key <AC10> { [         a,          A,       Down,      Down ] };
-   key <AC11> { [         i,          I,      Right,     Right ] };
-   key <BKSL> { [         h,          H ] };
+   key <LSGT> { [ x, X ] };
+   key <AB01> { [ b, B ] };
+   key <AB02> { [ m, M ] };
+   key <AB03> { [ c, C, colon ] };
+   key <AB04> { [ w, W ] };
 
-   key <LSGT> { [         x,          X ] };
-   key <AB01> { [         b,          B ] };
-   key <AB02> { [         m,          M ] };
-   key <AB03> { [         c,          C ] };
-   key <AB04> { [         w,          W ] };
-
-   key <AB07> { [apostrophe, quotedbl   ] };
-   key <AB08> { [     minus, underscore ] };
-   key <AB09> { [     slash, bar, backslash ] };
-   key <AB10> { [    period,      comma ] };
-   key <SPCE> { [     space,      space,        Tab,       Tab ] };
+   key <AB07> { [ apostrophe, quotedbl,   grave ] };
+   key <AB08> { [ minus,      underscore, plus,     asciicircum ] };
+   key <AB09> { [ slash,      bar,        asterisk, ampersand] };
+   key <AB10> { [ period,     comma ] };
+   key <SPCE> { [ space,      space,      Tab ] };
 
    include "level3(ralt_switch)"
 };
